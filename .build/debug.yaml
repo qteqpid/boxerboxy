@@ -1,0 +1,81 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "BoxerBoxy-arm64-apple-macosx-debug.exe": ["<BoxerBoxy-arm64-apple-macosx-debug.exe>"]
+  "BoxerBoxy-arm64-apple-macosx-debug.module": ["<BoxerBoxy-arm64-apple-macosx-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<BoxerBoxy-arm64-apple-macosx-debug.exe>","<BoxerBoxy-arm64-apple-macosx-debug.module>"]
+  "test": ["<BoxerBoxy-arm64-apple-macosx-debug.exe>","<BoxerBoxy-arm64-apple-macosx-debug.module>"]
+default: "main"
+nodes:
+  "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy":
+    is-mutated: true
+commands:
+  "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy-entitlement.plist"]
+    description: "Write auxiliary file /Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy-entitlement.plist"
+
+  "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameRenderer.swift","/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameState.swift","/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameView.swift","/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/Support.swift","/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/main.swift"]
+    outputs: ["/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/sources"]
+    description: "Write auxiliary file /Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/sources"
+
+  "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameRenderer.swift.o","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameState.swift.o","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameView.swift.o","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/Support.swift.o","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/main.swift.o"]
+    outputs: ["/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.product/Objects.LinkFileList"
+
+  "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<BoxerBoxy-arm64-apple-macosx-debug.exe>":
+    tool: phony
+    inputs: ["<BoxerBoxy-arm64-apple-macosx-debug.exe-CodeSigning>"]
+    outputs: ["<BoxerBoxy-arm64-apple-macosx-debug.exe>"]
+
+  "<BoxerBoxy-arm64-apple-macosx-debug.module>":
+    tool: phony
+    inputs: ["/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameRenderer.swift.o","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameState.swift.o","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameView.swift.o","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/Support.swift.o","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/main.swift.o","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/Modules/BoxerBoxy.swiftmodule"]
+    outputs: ["<BoxerBoxy-arm64-apple-macosx-debug.module>"]
+
+  "C.BoxerBoxy-arm64-apple-macosx-debug.exe":
+    tool: shell
+    inputs: ["/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameRenderer.swift.o","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameState.swift.o","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameView.swift.o","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/Support.swift.o","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/main.swift.o","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.product/Objects.LinkFileList"]
+    outputs: ["/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/BoxerBoxy"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug","-o","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy","-module-name","BoxerBoxy","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_BoxerBoxy_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx13.0","-Xlinker","-add_ast_path","-Xlinker","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/Modules/BoxerBoxy.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.BoxerBoxy-arm64-apple-macosx-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy-entitlement.plist"]
+    outputs: ["<BoxerBoxy-arm64-apple-macosx-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/BoxerBoxy"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy-entitlement.plist","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy"]
+
+  "C.BoxerBoxy-arm64-apple-macosx-debug.module":
+    tool: shell
+    inputs: ["/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameRenderer.swift","/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameState.swift","/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameView.swift","/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/Support.swift","/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/main.swift","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/sources"]
+    outputs: ["/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameRenderer.swift.o","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameState.swift.o","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameView.swift.o","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/Support.swift.o","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/main.swift.o","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/Modules/BoxerBoxy.swiftmodule"]
+    description: "Compiling Swift Module 'BoxerBoxy' (5 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","BoxerBoxy","-emit-dependencies","-emit-module","-emit-module-path","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/Modules/BoxerBoxy.swiftmodule","-output-file-map","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/output-file-map.json","-incremental","-c","@/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/sources","-I","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx13.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j12","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","BoxerBoxy_main","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","boxerboxy"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/","/Users/gongliang_zhang/Desktop/boxerboxy/Package.swift","/Users/gongliang_zhang/Desktop/boxerboxy/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

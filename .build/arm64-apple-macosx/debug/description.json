@@ -1,0 +1,327 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.BoxerBoxy-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/sources",
+      "importPath" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameRenderer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/Support.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "BoxerBoxy",
+      "moduleOutputPath" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/Modules/BoxerBoxy.swiftmodule",
+      "objects" : [
+        "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameRenderer.swift.o",
+        "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameState.swift.o",
+        "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameView.swift.o",
+        "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/Support.swift.o",
+        "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "BoxerBoxy_main",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "boxerboxy"
+      ],
+      "outputFileMapPath" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameRenderer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/Support.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/Modules/BoxerBoxy.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameRenderer.swift",
+        "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameState.swift",
+        "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameView.swift",
+        "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/Support.swift",
+        "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/main.swift"
+      ],
+      "tempsPath" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "BoxerBoxy" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "BoxerBoxy",
+      "-package-name",
+      "boxerboxy",
+      "-c",
+      "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameRenderer.swift",
+      "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameState.swift",
+      "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameView.swift",
+      "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/Support.swift",
+      "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/main.swift",
+      "-I",
+      "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "BoxerBoxy_main",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "boxerboxy",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "BoxerBoxy" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy-entitlement.plist"
+    },
+    "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameRenderer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/Support.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/main.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/sources"
+    },
+    "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameRenderer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/Support.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/main.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.product/Objects.LinkFileList"
+    },
+    "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

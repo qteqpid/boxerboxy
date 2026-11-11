@@ -1,0 +1,40 @@
+{
+  "": {
+    "swift-dependencies": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/primary.swiftdeps"
+  },
+  "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameRenderer.swift": {
+    "dependencies": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameRenderer.d",
+    "object": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameRenderer.swift.o",
+    "swiftmodule": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameRenderer~partial.swiftmodule",
+    "swift-dependencies": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameRenderer.swiftdeps",
+    "diagnostics": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameRenderer.dia"
+  },
+  "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameState.swift": {
+    "dependencies": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameState.d",
+    "object": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameState.swift.o",
+    "swiftmodule": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameState~partial.swiftmodule",
+    "swift-dependencies": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameState.swiftdeps",
+    "diagnostics": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameState.dia"
+  },
+  "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/GameView.swift": {
+    "dependencies": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameView.d",
+    "object": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameView.swift.o",
+    "swiftmodule": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameView~partial.swiftmodule",
+    "swift-dependencies": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameView.swiftdeps",
+    "diagnostics": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/GameView.dia"
+  },
+  "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/Support.swift": {
+    "dependencies": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/Support.d",
+    "object": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/Support.swift.o",
+    "swiftmodule": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/Support~partial.swiftmodule",
+    "swift-dependencies": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/Support.swiftdeps",
+    "diagnostics": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/Support.dia"
+  },
+  "/Users/gongliang_zhang/Desktop/boxerboxy/Sources/BoxerBoxy/main.swift": {
+    "dependencies": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/main.d",
+    "object": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/main.swift.o",
+    "swiftmodule": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/main.swiftdeps",
+    "diagnostics": "/Users/gongliang_zhang/Desktop/boxerboxy/.build/arm64-apple-macosx/debug/BoxerBoxy.build/main.dia"
+  }
+}
